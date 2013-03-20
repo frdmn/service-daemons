@@ -12,7 +12,7 @@ I've noticed that there are a lot of failed or non properly working **star/stop 
 1. Copy following script to /etc/init.d/: `wget https://github.com/frdmn/asdas/master/raw/debian -O /etc/init.d/debian` (as root)
 1. Make sure the script is marked as executable: `chmod +x /etc/init.d/debian`
 1. Enable the daemon with `update-rc.d debian defaults`
-1. Start with `service debian start`
+1. Start with `service debian start` 
 
 ### Ubuntu (_upstart_)
 
@@ -20,8 +20,8 @@ I've noticed that there are a lot of failed or non properly working **star/stop 
 
 ### Arch Linux (_rc.X_)
 
+### Mac OS X (_launchd_)
 ### Gentoo (_runscript_)
 
-### Mac OS X (_launchd_)
 
 ### Windows (_nssm_)

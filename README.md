@@ -9,21 +9,19 @@ I've noticed that there are a lot of failed or non properly working **star/stop 
 
 1. Create an own unix user for the desired service/daemon.
 1. Ensure the created user has full access to the binary you want to set up. (`/usr/bin/python`)
-1. Copy following script to /etc/init.d/: `curl https://github.com/frdmn/asdas/master/raw/debian | sh` (as root)
+1. Copy following script to /etc/init.d/: `wget https://github.com/frdmn/asdas/master/raw/debian -O /etc/init.d/debian` (as root)
 1. Make sure the script is marked as executable: `chmod +x /etc/init.d/debian`
-1. Enable the daemon with `update-rc.d test defaults`
-1. Start with `service test start`
+1. Enable the daemon with `update-rc.d debian defaults`
+1. Start with `service debian start`
 
-    ((include example-debian.sh))
+### Ubuntu (_upstart_)
 
-### Ubuntu (upstart)
+### CentOS 6 (_sysvinit_)
 
-### CentOS 6 (sysvinit)
+### Arch Linux (_rc.X_)
 
-### Arch Linux (rc.X)
+### Gentoo (_runscript_)
 
-### Gentoo (runscript)
+### Mac OS X (_launchd_)
 
-### Mac OS X (launchd)
-
-### Windows (nssm)
+### Windows (_nssm_)

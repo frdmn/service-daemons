@@ -24,5 +24,4 @@ I've noticed that there are a lot of failed or non properly working **star/stop 
 
 ### Gentoo (_runscript_)
 
-
-### Windows (_nssm_)
+### Windows (_nssm_) 

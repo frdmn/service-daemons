@@ -18,7 +18,7 @@ APP_ARGS="-m SimpleHTTPServer 8000"
 USER="minecraft"
 GROUP="minecraft"
 
-# Include functions
+# Include functions 
 set -e
 . /lib/lsb/init-functions
 

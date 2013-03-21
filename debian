@@ -19,7 +19,7 @@ USER="minecraft"
 GROUP="minecraft"
 
 # Include functions 
-set -e 
+set -e
 . /lib/lsb/init-functions
 
 start() {

@@ -4,12 +4,14 @@ I've noticed that there are a lot of failed or non properly working **star/stop 
 
     python -m SimpleHTTPServer 8000
 
-## Getting started
+(Caution: this command will probably serve the root directory of your machine! Make sure to stop the service if you don't change the executed binary.)
+
+## Daemons or start/start-scripts
 ### Debian and Ubuntu (sysvinit)
 
 1. Create an own unix user for the desired service/daemon.
 1. Ensure the created user has full access to the binary you want to set up. (`/usr/bin/python`)
-1. Copy following script to /etc/init.d/: `wget https://github.com/frdmn/asdas/master/raw/debian -O /etc/init.d/debian` (as root)
+1. Copy following script to /etc/init.d/: `wget https://github.com/frdmn/<repo>/master/raw/debian -O /etc/init.d/debian` (as root)
 1. Make sure the script is marked as executable: `chmod +x /etc/init.d/debian`
 1. Enable the daemon with `update-rc.d debian defaults`
 1. Start with `service debian start`  

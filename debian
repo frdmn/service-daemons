@@ -15,8 +15,8 @@ PATH="/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin"
 APP_DIR="/usr/bin"
 APP_BIN="python"
 APP_ARGS="-m SimpleHTTPServer 8000"
-USER="minecraft"
-GROUP="minecraft"
+USER="example"
+GROUP="example"
 
 # Include functions 
 set -e

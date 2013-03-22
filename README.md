@@ -7,10 +7,10 @@ You can find an explanation and instrtructions in my blog article here:
 
 This provides examples for the following linux distributions (or operating systems):
 
-* Debian and Ubuntu (_sysvinit_)
-* Ubuntu (_upstart_)
-* CentOS 6 (_sysvinit_)
-* Arch Linux (_rc.X_)
-* Mac OS X (_launchd_)
-* Gentoo (_runscript_)
-* Windows (_nssm_)
+* Debian and Ubuntu (sysvinit)
+* Ubuntu (upstart)
+* CentOS 6 (sysvinit)
+* Arch Linux (systemd)
+* Mac OS X (launchd)
+* Gentoo (runscript)
+* Windows (nssm)

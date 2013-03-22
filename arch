@@ -1,0 +1,11 @@
+[Unit]
+Description=example
+
+[Service]
+ExecStart=/usr/bin/python -m http.server 8000
+Type=simple
+User=example
+Group=example
+
+[Install]
+WantedBy=multi-user.target

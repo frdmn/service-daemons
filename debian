@@ -12,9 +12,9 @@
 
 NAME=`basename $0`
 PATH="/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin"
-APP_DIR="/usr/bin"
-APP_BIN="python"
-APP_ARGS="-m SimpleHTTPServer 8000"
+APPDIR="/usr/bin"
+APPBIN="python"
+APPARGS="-m SimpleHTTPServer 8000"
 USER="example"
 GROUP="example"
 
@@ -24,7 +24,7 @@ set -e
 
 start() {
   printf "Starting '$NAME'... "
-  start-stop-daemon --start --chuid "$USER:$GROUP" --background --make-pidfile --pidfile /var/run/$NAME.pid --exec "$APP_DIR/$APP_BIN" -- $APP_ARGS || true
+  start-stop-daemon --start --chuid "$USER:$GROUP" --background --make-pidfile --pidfile /var/run/$NAME.pid --exec "$APPDIR/$APPBIN" -- $APPARGS || true
   printf "done\n"
 }
 

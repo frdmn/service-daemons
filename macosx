@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+        <key>Label</key>
+        <string>mn.frd.example</string>
+        <key>ProgramArguments</key>
+        <array>
+            <string>/usr/bin/python</string>
+            <string>/tmp/httpd.py</string>
+        </array>
+        <key>KeepAlive</key>
+        <true/>
+        <key>RunAtLoad</key>
+        <true/>
+        <key>StartInterval</key>
+        <integer>3523</integer>
+        <key>StandardOutPath</key>
+        <string>/var/log/example/example.log</string>
+        <key>StandardErrorPath</key>
+        <string>/var/log/example/example-error.log</string>
+        <key>UserName</key>
+        <string>example</string>
+        <key>GroupName</key>
+        <string>admin</string>
+</dict>
+</plist>

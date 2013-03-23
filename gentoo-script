@@ -1,0 +1,20 @@
+#!/sbin/runscript
+# Copyright 1999-2012 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+# $Header: $
+
+depend() {
+        after net
+}
+
+start() {
+        ebegin "Starting ${RC_SVCNAME}"
+                start-stop-daemon -S -m --pidfile ${APPPID} -x ${APPBIN} -u ${USER} -d "${LOGFILE}" -b -- ${APPARGS}
+        eend $?
+}
+
+stop() {
+        ebegin "Stopping ${RC_SVCNAME}"
+                start-stop-daemon -K -x ${APPBIN} -u ${USER} -d "${LOGFILE}" 
+        eend $?
+}

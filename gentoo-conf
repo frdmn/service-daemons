@@ -1,0 +1,5 @@
+USER="example"
+APPBIN="/usr/bin/python"
+APPARGS="-m SimpleHTTPServer 8000"
+APPPID="/var/run/example.pid"
+LOGFILE="/var/log/example.log"

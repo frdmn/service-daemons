@@ -10,7 +10,7 @@
 # Description:       Example start-stop-daemon - Debian
 ### END INIT INFO
 
-NAME=`basename $0`
+NAME="example"
 PATH="/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin"
 APPDIR="/usr/bin"
 APPBIN="python"

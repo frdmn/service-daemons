@@ -2,7 +2,7 @@
 
 This repo contains some proper working start/stop scripts or damons for a lot of linux distributions or operating systems.
 
-You can find an explanation and instrtructions in my blog article here:
+You can find an explanation and instructions in my blog article here:
 
 [How to set up proper start/stop services](http://blog.frd.mn/how-to-set-up-proper-startstop-services/)
 

@@ -4,7 +4,7 @@ This repo contains some proper working start/stop scripts or damons for a lot of
 
 You can find an explanation and instructions in my blog article here:
 
-[How to set up proper start/stop services](http://blog.frd.mn/how-to-set-up-proper-startstop-services/)
+[How to set up proper start/stop services](http://blog.frd.mn/how-to-set-up-proper-startstop-services-ubuntu-debian-mac-windows/)
 
 This provides examples for the following linux distributions (or operating systems):
 

@@ -2,7 +2,7 @@
 machines=[
   {
     :hostname => "arch",
-    :ip => "192.168.100.10",
+    :ip => "192.168.100.101",
     :box => "https://dl.dropboxusercontent.com/u/31112574/arch64-20130801.box",
     :ram => 256,
   },

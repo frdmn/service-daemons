@@ -30,7 +30,7 @@ LOCKFILE="/var/lock/subsys/$APPNAME"
 LOGPATH=$(dirname $LOGFILE)
 
 start() {
-        [ -x $prog ] || exit 5
+        [ -x $APPBIN ] || exit 5
         [ -d $LOGPATH ] || mkdir $LOGPATH
         [ -f $LOGFILE ] || touch $LOGFILE
 
@@ -57,7 +57,7 @@ restart() {
 }
 
 rh_status() {
-        status $prog
+        status $APPBIN -l $LOCKFILE
 }
 
 rh_status_q() {

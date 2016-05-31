@@ -35,7 +35,7 @@ start() {
         [ -f $LOGFILE ] || touch $LOGFILE
 
         echo -n $"Starting $APPNAME: "
-        daemon --user=$USER "$APPBIN $APPARGS >>$LOGFILE &"
+        daemon --check=$APPNAME --user=$USER "$APPBIN $APPARGS >>$LOGFILE &"
         RETVAL=$?
         echo
         [ $RETVAL -eq 0 ] && touch $LOCKFILE
